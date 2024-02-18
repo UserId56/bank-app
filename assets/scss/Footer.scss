@@ -1,0 +1,27 @@
+footer {
+    background: #252a34;
+    span {
+        display: block;
+        margin-bottom: 32px;
+        font-family: "Gothampro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 13px;
+        color: #a9a9a9;
+    }
+}
+
+nav {
+    margin: 35px 0 27px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Gothampro";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 17px;
+        color: #ffffff;
+    }
+}
