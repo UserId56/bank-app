@@ -30,4 +30,4 @@
 </template>
 
 
-<style lang="scss" scoped>@import "@/assets/scss/Footer.scss";</style>
+<style></style>

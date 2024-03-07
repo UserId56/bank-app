@@ -2,6 +2,8 @@
   <div class="layout">
     <AppHeader />
     <div class="main">
+      <NuxtLoadingIndicator />
+      <AppFilter />
       <NuxtPage />
     </div>
     <AppFooter />

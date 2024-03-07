@@ -1,20 +1,19 @@
 header {
     background: #ffffff;
     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.06);
-}
-
-nav {
-    padding: 25px 64px 21px;
-    ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-family: "Gothampro";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 17px;
-        color: #252a34;
+    nav {
+        padding: 21px 64px 22px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "Gothampro";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 17px;
+            color: #252a34;
+        }
     }
 }
 

@@ -1,0 +1,68 @@
+@import "./variables.scss";
+
+.filter {
+    &--title {
+        font-family: $fonts-default;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 38px;
+        color: #252a34;
+        text-align: center;
+        margin-top: 75px;
+    }
+
+    &--subtitle {
+        font-family: $fonts-default;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 27px;
+        color: #252a34;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    &-type {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 38px;
+        grid-row-gap: 32px;
+        margin-top: 59px;
+
+        &-button {
+            background: #ffffff;
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.07);
+            border-radius: 12px;
+            padding-block: 17px;
+            padding-inline: 29px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+                background: #f4f4f4;
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.07);
+            }
+
+            &--title {
+                margin-left: 27px;
+                font-family: $fonts-default;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 19px;
+                color: #252a34;
+            }
+        }
+    }
+
+    &-interface {
+        height: 88px;
+        background: #ffffff;
+        box-shadow: 0px 0px 27px rgba(71, 107, 240, 0.15);
+        display: flex;
+        border-radius: 15px;
+        margin-top: 74px;
+    }
+}

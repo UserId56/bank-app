@@ -37,6 +37,4 @@
 
 </script>
 
-<style lang="scss" scoped>
-@import "@/assets/scss/Header.scss";
-</style>
+<style></style>
