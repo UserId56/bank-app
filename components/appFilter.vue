@@ -12,10 +12,8 @@
 
     </div>
     <div class="filter-interface">
-      <inputFilterVue typeButton="sum"></inputFilterVue>
-      <inputFilterVue typeButton="purpose"></inputFilterVue>
-      <inputFilterVue typeButton="purpose"></inputFilterVue>
-      <inputFilterVue typeButton="sum"></inputFilterVue>
+      <inputFilterVue :typeButton="item" v-for="item, index in testFilter" :key="index" :data-filterId="index">
+      </inputFilterVue>
     </div>
   </div>
 </template>
@@ -28,6 +26,7 @@ import inputFilterVue from "./inteface/inputFilter.vue";
 const pathApp = useRoute().path;
 const stringsComponent = getStringsData(pathApp);
 const FilterTypeConfig: Array<TypeFilter> = typeFilters();
+const testFilter = ["sum", "purpose", "purpose", "sum"]
 // const { data } = await useAsyncData('appFilter', (): any => getStringsData(route.path), { server: false })
 
 // const myStore = useMyIndexStore()

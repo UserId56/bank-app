@@ -5,7 +5,7 @@
     <input type="text" name="sum" id="sum" :max="data.max" class="input-container--input"
       v-if="props.typeButton === 'sum'" v-model="valueModelNum">
     <div name="purpose" id="purpose" class="input-container--input selection" v-if="props.typeButton === 'purpose'"
-      @click.stop="showListSelect">
+      @click="showListSelect" ref="selectionListDIV">
       {{ value.title }}
       <ul class="selection--list" :class="{ 'show-list': showList }" ref="selectionList">
         <li v-for="valueOption in data.options" :class="{ selected: valueOption.value == value.value }"
@@ -32,9 +32,10 @@ const props = defineProps({
 const dataTemp: inputData = inputFilterData(props.typeButton)
 const data = ref(dataTemp);
 const selectionList = ref<Ref | null>(null);
+const selectionListDIV = ref<Ref | null>(null);
 const height = ref(null);
 const showList = ref(false);
-const showListSelect = () => {
+const showListSelect = (ev: Event) => {
   if (!showList.value) {
     showList.value = true
     selectionList.value.style.maxHeight = selectionList.value.scrollHeight + "px";
@@ -67,10 +68,10 @@ value.value = (props.typeButton === "purpose" && data.value.options) ? data.valu
 const EventClicks: any = inject('EventClick')
 
 watch(EventClicks, (newValue, oldValue) => {
-  console.log('newValue !== selectionList', newValue !== selectionList.value)
-  console.log(selectionList)
-  if (newValue !== selectionList && selectionList.value !== null && showList.value) {
-    showListSelect()
+  if (newValue.targetEl !== selectionList.value && selectionList.value !== null && showList.value && selectionListDIV.value !== newValue.targetEl || oldValue.targetEl === selectionList.value) {
+    // showListSelect(EventClicks)
+    selectionList.value.style.maxHeight = '0px'
+    showList.value = !showList.value
   }
 })
 
