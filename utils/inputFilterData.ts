@@ -21,6 +21,32 @@ const dataFilter: DataFilterType = {
     max: 10_000_000,
     title: "Лимит",
   },
+  purpose: {
+    inputType: "purpose",
+    title: "Цель",
+    options: [
+      {
+        title: "Автомобиль",
+        value: "car",
+      },
+      {
+        title: "Автомобиль 2",
+        value: "car2",
+      },
+      {
+        title: "Автомобиль 3",
+        value: "car3",
+      },
+      {
+        title: "Автомобиль 4",
+        value: "car4",
+      },
+      {
+        title: "Автомобиль 5",
+        value: "car5",
+      },
+    ],
+  },
 };
 
 export default (type: string): inputData => {

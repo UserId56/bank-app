@@ -13,6 +13,9 @@
     </div>
     <div class="filter-interface">
       <inputFilterVue typeButton="sum"></inputFilterVue>
+      <inputFilterVue typeButton="purpose"></inputFilterVue>
+      <inputFilterVue typeButton="purpose"></inputFilterVue>
+      <inputFilterVue typeButton="sum"></inputFilterVue>
     </div>
   </div>
 </template>
