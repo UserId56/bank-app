@@ -3,6 +3,8 @@
 @import "./Header.scss";
 @import "./Footer.scss";
 @import "./inputFilter.scss";
+@import "./pages/index.scss";
+@import "./admin/index.scss";
 
 @font-face {
     font-family: "Gothampro";
@@ -19,7 +21,7 @@
 }
 
 @font-face {
-    font-family: "Gothampro";
+    font-family: "Gothampro Bold";
     src: url("/fonts/gothampro_bold.otf");
     font-weight: 700;
     font-style: bold;

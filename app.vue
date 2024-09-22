@@ -1,12 +1,12 @@
 <template>
   <div class="layout" @click="clickTemplate">
-    <AppHeader />
-    <div class="main">
+    <AppHeader v-show="!isAdmin" />
+    <div class="main" :class="{ admin: isAdmin }">
       <NuxtLoadingIndicator />
-      <AppFilter />
+      <AppFilter v-show="!isAdmin" />
       <NuxtPage />
     </div>
-    <AppFooter />
+    <AppFooter v-show="!isAdmin" />
   </div>
 </template>
 <script setup lang="ts">
@@ -19,6 +19,8 @@ const clickTemplate = (ev: Event) => {
   EventClick.type = ev.type
   // console.log(EventClick)
 }
+const route = useRoute();
+const isAdmin = ref(route.path.includes("admin"));
 
 provide('EventClick', EventClick)
 

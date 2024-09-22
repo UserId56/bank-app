@@ -33,15 +33,26 @@
         }
     }
 
-    &:after {
-        position: absolute;
-        content: "";
-        top: 0;
-        right: 0;
-        width: 2px;
-        height: 100%;
-        background-color: #e1e1e1;
+    & + .input-container {
+        &:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #e1e1e1;
+        }
     }
+    // &:after {
+    //     position: absolute;
+    //     content: "";
+    //     top: 0;
+    //     right: 0;
+    //     width: 2px;
+    //     height: 100%;
+    //     background-color: #e1e1e1;
+    // }
 }
 .selection {
     cursor: pointer;

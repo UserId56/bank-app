@@ -1,0 +1,45 @@
+@import "../variables.scss";
+.home-title {
+    font-family: "Gothampro Bold";
+    font-style: bold;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 38px;
+    color: #252a34;
+    display: block;
+    width: fit-content;
+    margin: 75px auto;
+}
+
+.tab {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 21px;
+    grid-row-gap: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+    &-item {
+        padding: 20px;
+        background: #e8ecff;
+        border-radius: 15px;
+        font-family: $fonts-default;
+        font-size: 22px;
+        line-height: 21px;
+        text-align: center;
+        color: #476bf0;
+        cursor: pointer;
+    }
+    &-active {
+        background: #476bf0;
+        color: #fff;
+    }
+}
+
+.list-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 0px;
+}

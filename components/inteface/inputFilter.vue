@@ -10,7 +10,7 @@
       <ul class="selection--list" :class="{ 'show-list': showList }" ref="selectionList">
         <li v-for="valueOption in data.options" :class="{ selected: valueOption.value == value.value }"
           @click="selected(valueOption)">{{
-    valueOption.title }}</li>
+            valueOption.title }}</li>
         <li>{{ EventClicks.target }}</li>
       </ul>
     </div>
