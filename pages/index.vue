@@ -6,34 +6,21 @@
         @click="selectedTab(tab.type)">
         {{ tab.title }}
       </div>
-      <div class="list-cards">
-        <div class="card" @click="test">
-
-        </div>
-      </div>
-
-
     </div>
+    <indexCardList></indexCardList>
   </div>
 </template>
 
 <script lang="ts" setup>
 const ArrayTab = ref(tabConfig());
-const store = useMyIndexStore();
-store.getBest();
-
 const selectedTab = (target: string): void => {
-  for (let i = 0; i < ArrayTab.value.length; i++) {
-    if (ArrayTab.value[i].type == target) {
-      ArrayTab.value[i].isOpen = true
+  for (const element of ArrayTab.value) {
+    if (element.type == target) {
+      element.isOpen = true
     } else {
-      ArrayTab.value[i].isOpen = false
+      element.isOpen = false
     }
   }
-}
-
-const test = () => {
-  console.log(store.BestDataList)
 }
 
 
