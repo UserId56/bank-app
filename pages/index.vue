@@ -8,10 +8,13 @@
       </div>
     </div>
     <indexCardList></indexCardList>
+    <BtnComponent class="margin-0-a btn-all-offer" setIcon="shopping-bag" bgcolor="white">Все предложения</BtnComponent>
   </div>
 </template>
 
 <script lang="ts" setup>
+import BtnComponent from '@/components/inteface/BtnComponent.vue'
+
 const ArrayTab = ref(tabConfig());
 const selectedTab = (target: string): void => {
   for (const element of ArrayTab.value) {
@@ -22,8 +25,4 @@ const selectedTab = (target: string): void => {
     }
   }
 }
-
-
 </script>
-
-<style></style>
