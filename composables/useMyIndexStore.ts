@@ -2,7 +2,8 @@ export const useMyIndexStore = defineStore({
   id: "myIndexStore",
   state: (): indexStoreType => {
     return {
-      BestDataList: [],
+      BestDataList: {},
+      tabName: "card",
     };
   },
   actions: {
@@ -38,6 +39,9 @@ export const useMyIndexStore = defineStore({
         };
       }
       // this.BestDataList = [1];
+    },
+    setTab(name: string) {
+      this.tabName = name;
     },
   },
 });

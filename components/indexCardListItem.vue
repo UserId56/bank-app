@@ -1,5 +1,5 @@
 <template>
-  <div class="card" v-for="element in store.BestDataList" :key="element.id">
+  <div class="card" v-for="element in store.BestDataList[store.tabName]" :key="element.id">
     <div class="card--content">
       <img class="card--logo" :src="element.logo" alt="logo">
       <span class="card--title">

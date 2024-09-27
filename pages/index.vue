@@ -8,15 +8,17 @@
       </div>
     </div>
     <indexCardList></indexCardList>
-    <BtnComponent class="margin-0-a btn-all-offer" setIcon="shopping-bag" bgcolor="white">Все предложения</BtnComponent>
+    <BtnComponent class="margin-0-a btn-all-offer">Все предложения</BtnComponent>
   </div>
 </template>
 
 <script lang="ts" setup>
 import BtnComponent from '@/components/inteface/BtnComponent.vue'
 
+const store = useMyIndexStore();
 const ArrayTab = ref(tabConfig());
 const selectedTab = (target: string): void => {
+  store.setTab(target);
   for (const element of ArrayTab.value) {
     if (element.type == target) {
       element.isOpen = true
