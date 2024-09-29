@@ -66,3 +66,28 @@ nav {
     max-width: 1024px;
     margin: 0 auto;
 }
+
+.tab {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 21px;
+    grid-row-gap: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+    &-item {
+        padding: 20px;
+        background: #e8ecff;
+        border-radius: 15px;
+        font-family: $fonts-default;
+        font-size: 22px;
+        line-height: 21px;
+        text-align: center;
+        color: #476bf0;
+        cursor: pointer;
+    }
+    &-active {
+        background: #476bf0;
+        color: #fff;
+    }
+}

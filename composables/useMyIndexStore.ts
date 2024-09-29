@@ -20,17 +20,10 @@ export const useMyIndexStore = defineStore({
       }
     },
     test1(item: number) {
-      // let tempArray = this.BestDataList;
-      // this.BestDataList.map((element) => {
-      //   console.log(element, "element");
-      //   console.log(item, "item");
-      //   return item === element.id ? "DELETED" : element;
-      // });
       const index = this.BestDataList.findIndex(
         (element) => element.id === item
       );
       if (index !== -1) {
-        // Используем Vue.set или простое присваивание, чтобы Pinia отслеживала изменение
         this.BestDataList[index] = {
           ...this.BestDataList[index],
           ...{
@@ -38,11 +31,9 @@ export const useMyIndexStore = defineStore({
           },
         };
       }
-      // this.BestDataList = [1];
     },
     setTab(name: string) {
       this.tabName = name;
     },
   },
 });
-// export const useMyIndexStore = useState('MyIndexStore',)

@@ -41,7 +41,7 @@ const iconList = {
   star: '/images/star.svg',
   'shopping-bag': '/images/shopping-bag.svg',
   'nfc-card': '/images/nfc-card.svg',
-  'cube-of-notes-stack': '/images/cube-of-notes-stack.svg',
+  'deb-card': '/images/cube-of-notes-stack.svg',
   'credit-card': '/images/credit-card.svg'
 }
 

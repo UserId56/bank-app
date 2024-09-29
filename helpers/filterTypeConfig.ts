@@ -28,7 +28,7 @@ export function typeFilters(): Array<TypeFilter> {
     {
       title: "Акции",
       imageUrl: "/images/star.svg",
-      type: "sales",
+      type: "star",
       link: "/sales",
     },
     {
@@ -40,7 +40,7 @@ export function typeFilters(): Array<TypeFilter> {
     {
       title: "Карты рассрочки",
       imageUrl: "/images/shopping-bag.svg",
-      type: "installment-card",
+      type: "shopping-bag",
       link: "/installment-card",
     },
   ];

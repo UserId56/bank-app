@@ -13,6 +13,11 @@ header {
             font-size: 18px;
             line-height: 17px;
             color: #252a34;
+            li {
+                a {
+                    color: #252a34;
+                }
+            }
         }
     }
 }

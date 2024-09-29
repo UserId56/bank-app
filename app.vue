@@ -3,7 +3,6 @@
     <AppHeader v-show="!isAdmin" />
     <div class="main" :class="{ admin: isAdmin }">
       <NuxtLoadingIndicator />
-      <AppFilter v-show="!isAdmin" />
       <NuxtPage />
     </div>
     <AppFooter v-show="!isAdmin" />

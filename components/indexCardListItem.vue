@@ -17,8 +17,7 @@
 
 <script lang="ts" setup>
 const store = useMyIndexStore();
-console.log(getStringsCard)
-await useAsyncData('list', () => store.getBest().then(() => true))
+await useAsyncData('list', () => store.getBest())
 const showOffer = (item: number) => {
   console.log('Нужно настроить редирект, когда допилишь страницы банков')
 }

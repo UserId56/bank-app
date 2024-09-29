@@ -3,11 +3,14 @@
     <h1 class="filter--title">{{ stringsComponent.title }}</h1>
     <h2 class="filter--subtitle" v-if="stringsComponent.subTitle">{{ stringsComponent.subTitle }}</h2>
     <div class="filter-type" v-if="$route.path === '/'">
-      <NuxtLink :to="typeFilter.link" class="filter-type-button" v-for="typeFilter in FilterTypeConfig">
-        <div class="filter-type-button--icon">
+      <NuxtLink :to="typeFilter.link" v-for="typeFilter in FilterTypeConfig">
+        <!-- <div class="filter-type-button--icon">
           <img :src="typeFilter.imageUrl" alt="">
         </div>
-        <div class="filter-type-button--title">{{ typeFilter.title }}</div>
+        <div class="filter-type-button--title">{{ typeFilter.title }}</div> -->
+        <BtnComponent :setIcon="typeFilter.type" bgcolor="white">
+          {{ typeFilter.title }}
+        </BtnComponent>
       </NuxtLink>
 
     </div>
@@ -19,6 +22,8 @@
 </template>
 
 <script lang="ts" setup>
+import BtnComponent from '@/components/inteface/BtnComponent.vue'
+
 import getStringsData from "@/helpers/strings/appFilter"
 import { typeFilters } from "@/helpers/filterTypeConfig"
 import type { TypeFilter } from "@/helpers/filterTypeConfig"

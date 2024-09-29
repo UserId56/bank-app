@@ -16,7 +16,7 @@
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink>КРЕДИТНЫЕ КАРТЫ</NuxtLink>
+            <NuxtLink to="credit-card">КРЕДИТНЫЕ КАРТЫ</NuxtLink>
           </li>
           <li>
             <NuxtLink>КРЕДИТЫ</NuxtLink>
