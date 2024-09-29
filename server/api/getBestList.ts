@@ -49,61 +49,117 @@ export default defineEventHandler(async (event) => {
     ],
     credit: [
       {
+        id: 1,
+        balance: 1.5,
+        cashback: 50000,
+        logo: "/images/logo2.png",
+      },
+      {
+        id: 2,
+        balance: 4,
+        cashback: 30000,
+        logo: "/images/logo3.png",
+      },
+      {
+        id: 3,
+        balance: 5,
+        cashback: 150000,
+        logo: "/images/logo4.png",
+      },
+      {
+        id: 4,
+        balance: 5,
+        cashback: 10000,
+        logo: "/images/logo5.png",
+      },
+      {
         id: 5,
         balance: 4,
-        cashback: 1.5,
+        cashback: 25000,
+        logo: "/images/logo6.png",
+      },
+      {
+        id: 6,
+        balance: 6,
+        cashback: 3000000,
+        logo: "/images/logo1.png",
+      },
+    ],
+    loan: [
+      {
+        id: 1,
+        balance: 1.5,
+        cashback: 5,
+        logo: "/images/logo3.png",
+      },
+      {
+        id: 2,
+        balance: 0,
+        cashback: 14,
+        logo: "/images/logo4.png",
+      },
+      {
+        id: 3,
+        balance: 5,
+        cashback: 15,
         logo: "/images/logo5.png",
+      },
+      {
+        id: 4,
+        balance: 5,
+        cashback: 30,
+        logo: "/images/logo6.png",
+      },
+      {
+        id: 5,
+        balance: 4,
+        cashback: 60,
+        logo: "/images/logo1.png",
+      },
+      {
+        id: 6,
+        balance: 6,
+        cashback: 90,
+        logo: "/images/logo2.png",
+      },
+    ],
+    RKO: [
+      {
+        id: 1,
+        balance: 1.5,
+        cashback: 0,
+        logo: "/images/logo4.png",
+      },
+      {
+        id: 2,
+        balance: 0,
+        cashback: 750,
+        logo: "/images/logo5.png",
+      },
+      {
+        id: 3,
+        balance: 5,
+        cashback: 200,
+        logo: "/images/logo6.png",
+      },
+      {
+        id: 4,
+        balance: 1,
+        cashback: 590,
+        logo: "/images/logo1.png",
+      },
+      {
+        id: 5,
+        balance: 4,
+        cashback: 0,
+        logo: "/images/logo2.png",
+      },
+      {
+        id: 6,
+        balance: 6,
+        cashback: 0,
+        logo: "/images/logo3.png",
       },
     ],
   });
-  // switch (body.type) {
-  //   case "card":
-  //     return JSON.stringify([
-  //       {
-  //         id: 1,
-  //         balance: 4,
-  //         cashback: 15,
-  //         logo: "/images/logo1.png",
-  //       },
-  //       {
-  //         id: 2,
-  //         balance: 4,
-  //         cashback: 1,
-  //         logo: "/images/logo2.png",
-  //       },
-  //       {
-  //         id: 3,
-  //         balance: 5,
-  //         cashback: 15,
-  //         logo: "/images/logo3.png",
-  //       },
-  //       {
-  //         id: 4,
-  //         balance: 5,
-  //         cashback: 10,
-  //         logo: "/images/logo4.png",
-  //       },
-  //       {
-  //         id: 5,
-  //         balance: 4,
-  //         cashback: 1.5,
-  //         logo: "/images/logo5.png",
-  //       },
-  //       {
-  //         id: 6,
-  //         balance: 6,
-  //         cashback: 10,
-  //         logo: "/images/logo6.png",
-  //       },
-  //     ]);
-  //   case "credit":
-  //     return JSON.stringify([
-  //       {
-  //         id: null,
-  //       },
-  //     ]);
-  //   default:
-  //     setResponseStatus(event, 400);
-  //     return JSON.stringify({ error: "Invalid type" });
-  // }
 });
