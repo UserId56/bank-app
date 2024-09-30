@@ -1,4 +1,4 @@
-## Setup.
+## Setup
 
 Make sure to install the dependencies:
 

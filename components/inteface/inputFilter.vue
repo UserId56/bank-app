@@ -76,5 +76,3 @@ watch(EventClicks, (newValue, oldValue) => {
 })
 
 </script>
-
-<style></style>
