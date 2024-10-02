@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts" setup>
-import BtnComponent from '@/components/inteface/BtnComponent.vue'
+// import BtnComponent from '@/components/inteface/BtnComponent.vue'
 
 import getStringsData from "@/helpers/strings/appFilter"
 import { typeFilters } from "@/helpers/filterTypeConfig"

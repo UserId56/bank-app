@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+.wrapper__title {
+    font-family: $fonts-default;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 34px;
+    color: #252a34;
+    text-align: center;
+    margin-top: 74px;
+    margin-bottom: 63px;
+}

@@ -19,13 +19,13 @@
             <NuxtLink to="credit-card">КРЕДИТНЫЕ КАРТЫ</NuxtLink>
           </li>
           <li>
-            <NuxtLink>КРЕДИТЫ</NuxtLink>
+            <NuxtLink to="credit">КРЕДИТЫ</NuxtLink>
           </li>
           <li>
-            <NuxtLink>ЗАЙМЫ</NuxtLink>
+            <NuxtLink to="/loan">ЗАЙМЫ</NuxtLink>
           </li>
           <li>
-            <NuxtLink>РКО</NuxtLink>
+            <NuxtLink to="/RKO">РКО</NuxtLink>
           </li>
         </ul>
       </nav>

@@ -6,7 +6,7 @@
 @import "./pages/index.scss";
 @import "./admin/index.scss";
 @import "./components/BtnComponent.scss";
-
+@import "./pages/credit-card.scss";
 @font-face {
     font-family: "Gothampro";
     src: url("/fonts/gothampro_light.otf");
@@ -76,7 +76,7 @@ nav {
     width: 100%;
     margin-bottom: 30px;
     &-item {
-        padding: 20px;
+        padding: 20px 10px;
         background: #e8ecff;
         border-radius: 15px;
         font-family: $fonts-default;

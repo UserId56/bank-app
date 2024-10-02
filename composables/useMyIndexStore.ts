@@ -19,19 +19,19 @@ export const useMyIndexStore = defineStore({
           : this.BestDataList;
       }
     },
-    test1(item: number) {
-      const index = this.BestDataList.findIndex(
-        (element) => element.id === item
-      );
-      if (index !== -1) {
-        this.BestDataList[index] = {
-          ...this.BestDataList[index],
-          ...{
-            id: 123123,
-          },
-        };
-      }
-    },
+    // test1(item: number) {
+    //   const index = this.BestDataList.findIndex(
+    //     (element) => element.id === item
+    //   );
+    //   if (index !== -1) {
+    //     this.BestDataList[index] = {
+    //       ...this.BestDataList[index],
+    //       ...{
+    //         id: 123123,
+    //       },
+    //     };
+    //   }
+    // },
     setTab(name: string) {
       this.tabName = name;
     },

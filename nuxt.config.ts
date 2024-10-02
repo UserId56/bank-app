@@ -16,4 +16,9 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["./stores"],
   },
+  // vue: {
+  //   compilerOptions: {
+  //     isCustomElement: (tag) => ["BtnComponent"].includes(tag),
+  //   },
+  // },
 });
