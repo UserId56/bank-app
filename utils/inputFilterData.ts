@@ -47,6 +47,10 @@ const dataFilter: DataFilterType = {
       },
     ],
   },
+  button: {
+    inputType: "button",
+    title: "Подобрать",
+  },
 };
 
 export default (type: string): inputData => {

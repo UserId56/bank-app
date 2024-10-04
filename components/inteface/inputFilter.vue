@@ -1,5 +1,8 @@
 <template>
-  <div class="input-container" :class="{ 'selection-open': showList }">
+  <div class="input-container" :class="{
+    'selection-open': showList,
+    'button': props.typeButton == 'button'
+  }">
     <label class="input-container--title" :for="props.typeButton" v-if="props.typeButton !== 'button'">{{ data.title
       }}</label>
     <input type="text" name="sum" id="sum" :max="data.max" class="input-container--input"
@@ -14,6 +17,7 @@
         <li>{{ EventClicks.target }}</li>
       </ul>
     </div>
+    <BtnComponent v-if="props.typeButton == 'button'" borderHidden filter bgcolor="blue">{{ data.title }}</BtnComponent>
 
     <!-- <select name="purpose" id="purpose" class="input-container--input-num" v-if="props.typeButton === 'purpose'">
       <option :value="valueOption.value" v-for="valueOption in data.options">{{ valueOption.title }}</option>

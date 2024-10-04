@@ -13,4 +13,5 @@ declare interface inputData {
 declare interface DataFilterType {
   sum: inputData;
   purpose: inputData;
+  button: inputData;
 }

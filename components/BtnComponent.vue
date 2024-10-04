@@ -4,6 +4,7 @@
     'btn-bg-blue': props.bgcolor === 'blue',
     'btn-bg-white': props.bgcolor === 'white',
     'btn-bg-blue-blur': props.bgcolor === 'blue-blur',
+    'btn-filter': props.filter
   }">
     <img :src="icon" alt="" class="btn-icon" v-if="props.setIcon">
     <slot></slot>
@@ -25,6 +26,11 @@ const props = defineProps({
     default: '#333',
   },
   borderHidden: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
+  filter: {
     type: Boolean,
     required: false,
     default: false,

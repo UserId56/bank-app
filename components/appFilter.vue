@@ -31,7 +31,7 @@ import inputFilterVue from "./inteface/inputFilter.vue";
 const pathApp = useRoute().path;
 const stringsComponent = getStringsData(pathApp);
 const FilterTypeConfig: Array<TypeFilter> = typeFilters();
-const testFilter = ["sum", "purpose", "purpose", "sum"]
+const testFilter = ["sum", "purpose", "purpose", "button"]
 // const { data } = await useAsyncData('appFilter', (): any => getStringsData(route.path), { server: false })
 
 // const myStore = useMyIndexStore()
