@@ -22,8 +22,8 @@ export function typeFilters(): Array<TypeFilter> {
     {
       title: "Эквайринг",
       imageUrl: "/images/nfc-card.svg",
-      type: "nfc-card",
-      link: "/nfc-card",
+      type: "rko",
+      link: "/rko",
     },
     {
       title: "Акции",

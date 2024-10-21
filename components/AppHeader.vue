@@ -25,7 +25,7 @@
             <NuxtLink to="/loan">ЗАЙМЫ</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/RKO">РКО</NuxtLink>
+            <NuxtLink to="/rko">РКО</NuxtLink>
           </li>
         </ul>
       </nav>

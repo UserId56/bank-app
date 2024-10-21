@@ -75,7 +75,11 @@ export default (path: string): Array<tabConfigType> => {
       return getTabName(["card", "credit", "loan", "RKO"]);
     case "/credit-card":
       return getTabName(["rating", "limit", "preferential", "percent"]);
-    case "/credit" || "/loan" || "/RKO":
+    case "/credit":
+      return getTabName(["rating", "sum", "rate", "period"]);
+    case "/loan":
+      return getTabName(["rating", "sum", "rate", "period"]);
+    case "/RKO":
       return getTabName(["rating", "sum", "rate", "period"]);
     default:
       throw new Error("Не верный url или нет данных для url  в tabConfig");
