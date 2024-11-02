@@ -1,0 +1,88 @@
+@import "./variables.scss";
+
+.card-product {
+    background: #ffffff;
+    box-shadow:
+        0px 0px 4px rgba(0, 0, 0, 0.09),
+        0px 0px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    padding: 27px 19px;
+    margin-bottom: 23px;
+    &__title {
+        font-family: $fonts-bold;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 25px;
+
+        color: #252a34;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 18px;
+        margin-top: 27px;
+        &__block {
+            position: relative;
+            // Это надо перенести слева у тегов а не справа у информации
+
+            &__rating {
+                background: url("/images/starall.png") no-repeat;
+                width: 77px;
+                height: 20px;
+                position: relative;
+                &_filter {
+                    content: attr(data-rating);
+                    position: absolute;
+                    height: 20px;
+                    top: 0;
+                    right: 0;
+                    background: url("/images/starall.png") no-repeat;
+                    background-position: right;
+                    filter: grayscale(100%);
+                }
+            }
+            & .info-block {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 14px 23px;
+            }
+        }
+        &__tag {
+            position: relative;
+            & .tag-list {
+                display: flex;
+                flex-direction: column;
+                padding-left: 16px;
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    &__title {
+                        font-family: $fonts-default;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 17px;
+                        color: #476bf0;
+                        margin-left: 16px;
+                    }
+                }
+                &__item:not(:last-child) {
+                    margin-bottom: 27px;
+                }
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 1px;
+                height: 80%;
+                background-color: #476bf0;
+            }
+        }
+    }
+}

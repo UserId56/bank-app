@@ -3,6 +3,7 @@
     <AppFilter />
     <wrapperTitle :count="count"></wrapperTitle>
     <tabComponent :tabsList="ArrayTab" @selectTab="selectedTab"></tabComponent>
+    <cardProduct></cardProduct>
   </div>
 </template>
 
@@ -11,8 +12,6 @@ const count = ref(0)
 const pathApp = useRoute().path;
 const ArrayTab = ref(tabConfig(pathApp));
 
-function selectedTab() { }
+function selectedTab(target: string) { console.log(target) }
 
 </script>
-
-<style></style>

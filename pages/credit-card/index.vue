@@ -3,6 +3,7 @@
     <AppFilter />
     <wrapperTitle :count="count"></wrapperTitle>
     <tabComponent :tabsList="ArrayTab" @selectTab="selectedTab"></tabComponent>
+    <cardProduct></cardProduct>
   </div>
 </template>
 
