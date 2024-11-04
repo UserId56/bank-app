@@ -8,14 +8,14 @@
         </div>
         <div class="card-product__content__block">
           <div class="card-product__content__block__rating">
-            <div class="card-product__content__block__rating_filter"
+            <div class="card-product__content__block__rating-filter"
               :style="`width: ${77 * (100 / (5 / (5 - card.rating))) / 100}px`">
             </div>
-            <div class="info-block">
-              <div class="info-block__element">
-                <div class="info-block__element__title"></div>
-                <div class="info-block__element__value"></div>
-              </div>
+
+          </div>
+          <div class="info-block" v-for="block, index in configColumn" :key="index">
+            <div class="info-block__element" v-for="element in block" :key="element.name">
+              <ElementInfoBlock :info="element" type="small"></ElementInfoBlock>
             </div>
           </div>
         </div>
@@ -33,6 +33,11 @@
 </template>
 
 <script lang="ts" setup>
+import ElementInfoBlock from './ElementInfoBlock.vue';
+
+
+const pathApp = useRoute().path;
+const configColumn = productInfoConfig(pathApp.replace("/", ""));
 
 let listCard = ref([{
   title: 'Кредитная карта Тинькофф All Airlines Black Edition',
@@ -78,7 +83,7 @@ let listCard = ref([{
     icon: '/images/time.png',
     title: 'Быстрое решение'
   }],
-  rating: 1.5,
+  rating: 4.5,
   moneyLimit: 2000000,
   gracePeriod: 55,
   cashback: 30,
