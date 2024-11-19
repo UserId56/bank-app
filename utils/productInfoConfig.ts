@@ -7,7 +7,7 @@ const objectConfig = {
       },
       {
         name: "gracePeriod",
-        type: "period",
+        type: "day",
       },
       {
         name: "cashback",

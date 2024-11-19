@@ -8,6 +8,28 @@
     border-radius: 15px;
     padding: 27px 19px;
     margin-bottom: 23px;
+    &__btn {
+        display: flex;
+        gap: 25px;
+        margin-top: 15px;
+        & > .btn {
+            font-size: 18px;
+        }
+    }
+    &__contact-info {
+        margin-top: 23px;
+        display: flex;
+        gap: 18px;
+        & > * {
+            font-family: $fonts-default;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 13px;
+            color: #818181;
+            text-decoration: none;
+        }
+    }
     &__title {
         font-family: $fonts-bold;
         font-style: normal;
@@ -19,7 +41,7 @@
     }
     &__content {
         display: grid;
-        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-columns: 1fr 1.7fr 1fr;
         grid-template-rows: 1fr;
         gap: 0px 18px;
         margin-top: 27px;
@@ -45,9 +67,37 @@
             }
             & .info-block {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1.5fr 1fr;
+                grid-template-rows: 1fr;
                 gap: 14px 23px;
+                &__container {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    gap: 14px 23px;
+                }
+                &__element {
+                    &__title {
+                        font-family: $fonts-default;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 13px;
+                        color: #818181;
+                    }
+                    &__value {
+                        font-family: $fonts-default;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 13px;
+                        color: #252a34;
+                    }
+                    &-container {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
             }
         }
         &__tag {
